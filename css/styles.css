@@ -293,6 +293,15 @@ p {
     fill: currentColor;
   }
 
+  .js-close-menu {
+  }
+
+  .js-close-menu:hover,
+  .js-close-menu:focus {
+    background-color: var(--bg-pressed-color);
+    fill: var(--bg-primary-color);
+  }
+
   .mobile-menu {
     display: flex;
     flex-direction: column;
@@ -499,9 +508,6 @@ p {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  max-width: 1440px;
-  margin-right: auto;
-  margin-left: auto;
 }
 
 .hero__wrap {

@@ -595,7 +595,7 @@ p {
           var(--bg-hero-color)
         ),
         url('../images/desktop/desktop-hero@2x.jpg');
-      padding-bottom: 108px;
+      padding-bottom: 112px;
     }
   }
 
@@ -604,19 +604,6 @@ p {
     font-size: 56px;
     line-height: 1.07;
     letter-spacing: 0.02em;
-  }
-}
-
-@media screen and (min-device-pixel-ratio: 2) and (min-width: 769px),
-  screen and (min-resolution: 192dpi) and (min-width: 769px),
-  screen and (min-resolution: 2dppx) and (min-width: 769px) {
-  .hero {
-    background-image: linear-gradient(
-        var(--bg-hero-color),
-        var(--bg-hero-color)
-      ),
-      url('../images/desktop/desktop-hero@2x.jpg');
-    padding-bottom: 112px;
   }
 }
 

@@ -113,8 +113,8 @@ p {
 @media screen and (min-width: 1200px) {
   .container {
     width: 1200px;
-    padding-left: 15px;
     padding-right: 15px;
+    padding-left: 15px;
   }
 }
 
@@ -314,9 +314,11 @@ p {
     line-height: 1.11;
     letter-spacing: 0.02em;
     text-transform: capitalize;
+    transition: var(--transition-dur-func);
   }
 
-  .mobile-link.active {
+  .mobile-link:hover,
+  .mobile-link:focus {
     color: var(--text-active-color);
   }
 
@@ -328,11 +330,20 @@ p {
   }
 
   .link-tel {
-    color: var(--text-brand-color);
+    color: var(--text-color);
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    transition: var(--transition-dur-func);
+  }
+
+  .link-tel:hover,
+  .link-tel:focus {
+    color: var(--text-active-color);
     font-weight: 600;
     font-size: 36px;
-    line-height: 1.11;
-    text-transform: capitalize;
+    line-height: 40px;
   }
 
   .link-mail {
@@ -341,6 +352,15 @@ p {
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
+    transition: var(--transition-dur-func);
+  }
+
+  .link-mail:hover,
+  .link-mail:focus {
+    color: var(--text-active-color);
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 40px;
   }
 
   .social-list {
@@ -552,12 +572,12 @@ p {
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     .hero {
+      padding-bottom: 112px;
       background-image: linear-gradient(
           var(--bg-hero-color),
           var(--bg-hero-color)
         ),
         url('../images/desktop/desktop-hero@2x.jpg');
-      padding-bottom: 112px;
     }
   }
   .hero__title {
@@ -1341,9 +1361,9 @@ p {
 }
 
 .btn-portfolio {
-  color: var(--text-brand-color);
-  background-color: var(--bg-light-color);
   border: 1px solid var(--accent-color);
+  background-color: var(--bg-light-color);
+  color: var(--text-brand-color);
 
   transition: color var(--transition-dur-func),
     background-color var(--transition-dur-func),
@@ -1354,9 +1374,9 @@ p {
 .btn-portfolio.active,
 .btn-portfolio:hover,
 .btn-portfolio:focus {
-  color: var(--text-white-color);
-  background-color: var(--bg-pressed-color);
   border-color: var(--bg-pressed-color);
+  background-color: var(--bg-pressed-color);
+  color: var(--text-white-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
@@ -1387,18 +1407,18 @@ p {
   position: absolute;
   top: 0;
   left: 0;
+  overflow: auto;
   width: 100%;
   height: 100%;
-  overflow: auto;
-  transform: translate(0, 100%);
-  transition: transform var(--transition-dur-func);
+
+  padding: 40px 32px;
+  background-color: var(--bg-brand-color);
+  color: var(--text-light-color);
 
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: var(--text-light-color);
-  background-color: var(--bg-brand-color);
-
-  padding: 40px 32px;
+  transition: transform var(--transition-dur-func);
+  transform: translate(0, 100%);
 }
 
 .portfolio-list-link:hover .portfolio-overlay,
@@ -1407,11 +1427,11 @@ p {
 }
 
 .portfolio-content-wrap {
-  border: 1px solid var(--accent-color);
-  border-top: 0;
   padding-top: 32px;
   padding-bottom: 32px;
   padding-left: 16px;
+  border: 1px solid var(--accent-color);
+  border-top: 0;
 }
 
 .portfolio-list-link:hover .portfolio-content-wrap {

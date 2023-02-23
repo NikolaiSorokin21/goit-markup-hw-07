@@ -236,7 +236,7 @@ p {
   gap: 25px;
 }
 
-@media screen and (max-width: 768.98px) {
+@media screen and (max-width: 767.98px) {
   .nav {
     display: none;
   }

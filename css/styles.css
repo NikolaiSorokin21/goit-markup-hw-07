@@ -595,37 +595,30 @@ p {
   }
 }
 
-.hero__wrap {
-  display: flex;
-  flex-direction: column;
-  gap: var(--indent);
-  align-items: center;
-}
-
-@media screen and (min-width: 768px) {
-  .hero__wrap {
-    gap: 0;
-  }
-}
-
 .hero__title {
-  width: 320px;
-  margin-right: auto;
-  margin-left: auto;
+  display: block;
+  width: 318px;
   color: var(--text-white-color);
   font-weight: 700;
   font-size: 36px;
-  line-height: 1.11;
+  line-height: calc(40 / 36);
   letter-spacing: 0.02em;
-  text-align: center;
-  text-transform: capitalize;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 72px;
 }
+
 @media screen and (min-width: 768px) {
   .hero__title {
-    width: 494px;
-    margin-bottom: 40px;
+    min-width: 494px;
+    margin-bottom: 48px;
     font-size: 56px;
     line-height: calc(60 / 56);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero__title {
+    margin-bottom: 40px;
   }
 }
 

@@ -596,7 +596,7 @@ p {
 }
 
 .hero__title {
-  width: 318px;
+  width: 320px;
   color: var(--text-white-color);
   font-weight: 700;
   font-size: 36px;
@@ -609,7 +609,7 @@ p {
 
 @media screen and (min-width: 768px) {
   .hero__title {
-    min-width: 494px;
+    min-width: 496px;
     margin-bottom: 40px;
     font-size: 56px;
     line-height: calc(60 / 56);

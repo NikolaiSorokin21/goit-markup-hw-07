@@ -596,7 +596,6 @@ p {
 }
 
 .hero__title {
-  display: block;
   width: 318px;
   color: var(--text-white-color);
   font-weight: 700;

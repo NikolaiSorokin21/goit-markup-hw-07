@@ -610,14 +610,14 @@ p {
 @media screen and (min-width: 768px) {
   .hero__title {
     min-width: 494px;
-    margin-bottom: 48px;
+    margin-bottom: 40px;
     font-size: 56px;
     line-height: calc(60 / 56);
   }
 }
 @media screen and (min-width: 1200px) {
   .hero__title {
-    margin-bottom: 40px;
+    margin-bottom: 48px;
   }
 }
 

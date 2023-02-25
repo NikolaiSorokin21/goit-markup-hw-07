@@ -527,6 +527,7 @@ p {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  text-align: center;
 }
 
 @media screen and (min-device-pixel-ratio: 2),
@@ -587,13 +588,6 @@ p {
   }
 }
 
-.hero__title {
-  width: 496px;
-  font-size: 56px;
-  line-height: 1.07;
-  letter-spacing: 0.02em;
-}
-
 @media screen and (min-width: 1200px) {
   .hero {
     padding-top: 188px;
@@ -616,6 +610,8 @@ p {
 
 .hero__title {
   width: 320px;
+  margin-right: auto;
+  margin-left: auto;
   color: var(--text-white-color);
   font-weight: 700;
   font-size: 36px;
@@ -626,21 +622,13 @@ p {
 }
 @media screen and (min-width: 768px) {
   .hero__title {
-    margin-bottom: 40px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .hero__title {
     width: 494px;
-    margin-right: auto;
-    margin-bottom: 48px;
-    margin-left: auto;
-    font-weight: 700;
+    margin-bottom: 40px;
     font-size: 56px;
     line-height: calc(60 / 56);
   }
 }
+
 .hero__btn {
   padding: 16px 32px;
   background-color: var(--bg-brand-color);
